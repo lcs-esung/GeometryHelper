@@ -10,7 +10,7 @@ import SwiftUI
 struct CircleView: View {
     
     // MARK: Stored properties
-    @State var radius = 10.0
+    @State var currentCircle = Circle(radius: 10.0)
     
     // MARK: Computed properties
     
