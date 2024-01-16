@@ -33,15 +33,15 @@ struct CircleView: View {
                 .padding(.top)
          
                 Text("\(currentCircle.radius)")
-                .padding(.trailing, 250)
+                .padding(.leading, -170)
          
             Text("Diameter")
                 .bold()
-                .padding(.trailing, 260)
+                .padding(.trailing, 265)
                 .padding(.top)
                 
                 Text("\(currentCircle.diameter)")
-                .padding(.trailing, 250)
+                .padding(.leading, -170)
          
             Text("Perimeter")
              .bold()
@@ -49,18 +49,18 @@ struct CircleView: View {
              .padding(.top)
          
                 Text("\(currentCircle.perimeter)")
-                .padding(.trailing, 250)
+                .padding(.leading, -170)
          
             Text("Area")
              .bold()
-             .padding(.trailing, 260)
+             .padding(.trailing, 300)
              .padding(.top)
          
                 Text("\(currentCircle.area)")
-                .padding(.trailing, 250)
+                .padding(.leading, -170)
         }
         
-        .padding(.bottom, 240)
+        .padding(.bottom, 130)
         .padding()
             
     }
