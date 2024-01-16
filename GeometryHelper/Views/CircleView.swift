@@ -15,12 +15,21 @@ struct CircleView: View {
     // MARK: Computed properties
     
     var body: some View {
-        
-        HStack{
+    
+        NavigationStack{
             
             VStack {
-                Slider(value: $currentCircle.radius, in: 0...100)
                 
+                
+                HStack{
+                    
+                    Text("0")
+                    
+                    Slider(value: $currentCircle.radius, in: 0...100)
+                    
+                    Text("100")
+                    
+                }
                 
                 Text("Radius")
                     .bold()
@@ -31,12 +40,17 @@ struct CircleView: View {
                     .bold()
                 
                 Text("\(currentCircle.diameter)")
+                
+                    .navigationTitle("Circle")
+
+                }
+            .font(.title3)
+            .padding()
+            
             }
+        
         }
-        .padding()
-    }
-       
-}
+   }
 
 #Preview {
     CircleView()
