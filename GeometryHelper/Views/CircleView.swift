@@ -16,20 +16,20 @@ struct CircleView: View {
     
     var body: some View {
     
-        NavigationStack{
+     
             
-            VStack {
+        VStack {
                 
+                Image("CircleImage")
                 
-                HStack{
+            HStack{
                     
                     Text("0")
                     
                     Slider(value: $currentCircle.radius, in: 0...100)
                     
                     Text("100")
-                    
-                }
+        }
                 
                 Text("Radius")
                     .bold()
@@ -41,8 +41,6 @@ struct CircleView: View {
                 
                 Text("\(currentCircle.diameter)")
                 
-                    .navigationTitle("Circle")
-
                 }
             .font(.title3)
             .padding()
@@ -50,7 +48,7 @@ struct CircleView: View {
             }
         
         }
-   }
+   
 
 #Preview {
     CircleView()
