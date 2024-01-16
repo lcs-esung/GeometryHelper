@@ -16,14 +16,22 @@ struct CircleView: View {
     
     var body: some View {
         
-        VStack{
-            Text("\(currentCircle.radius)")
-                .font(.largeTitle)
+        HStack{
             
-            Slider(value: $currentCircle.radius, in: 0...100)
-            
-            Text("\(currentCircle.diameter)")
-                .font(.largeTitle)
+            VStack {
+                Slider(value: $currentCircle.radius, in: 0...100)
+                
+                
+                Text("Radius")
+                    .bold()
+                Text("\(currentCircle.radius)")
+                
+                
+                Text("Diameter")
+                    .bold()
+                
+                Text("\(currentCircle.diameter)")
+            }
         }
         .padding()
     }
